@@ -12,7 +12,7 @@ export const Header = () => {
             <Box>
                 <TextField
                     value={text}
-                    onChange={(e) => dispatch(setSearch(e.target.value))}
+                    onChange={(e) => dispatch(setSearch(e.target.value.toLowerCase()))}
                     variant="standard"
                 />
             </Box>
